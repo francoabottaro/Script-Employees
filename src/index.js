@@ -10,7 +10,7 @@ function create_date() {
   const year = chance.year({ min: 2021, max: 2023 });
   const month = ("0" + chance.month({ raw: true }).numeric).slice(-2);
   const day = ("0" + chance.integer({ min: 1, max: 28 })).slice(-2);
-  return `${day}-${month}-${year}`;
+  return `${year}-${month}-${day}`;
 }
 // * Length
 const lengthEmployees = 50;
